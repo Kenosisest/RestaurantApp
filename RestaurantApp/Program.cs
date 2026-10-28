@@ -25,5 +25,12 @@ namespace RestaurantApp
         public string Name { get; set; }
         public string Type { get; set; }
         public double Rating { get; set; }
+        public Restaurant(int id, string name, string type, double rate)
+        {
+            this.Id = id;
+            this.Name = name;
+            this.Type = type;
+            this.Rating = rate;
+        }
     }
 }
