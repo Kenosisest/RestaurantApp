@@ -21,6 +21,13 @@ namespace RestaurantApp
             new Restaurant(2, "Donglaishun Hot Pot", "Hot Pot", 4.6),
             new Restaurant(3, "Din Tai Fung", "Taiwanese Cuisine", 4.7)
             };
+
+            foreach (Restaurant res in restaurants)
+            {
+                Console.WriteLine($"ID: {res.Id} | ร้าน: {res.Name} | ประเภท: {res.Type} | คะแนน: {res.Rating}");
+            }
+
+
         }
     }
     public class Restaurant
