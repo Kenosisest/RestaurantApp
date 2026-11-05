@@ -30,7 +30,12 @@ namespace RestaurantApp
                 Console.WriteLine($"ID: {res.Id} | ร้าน: {res.Name} | ประเภท: {res.Type} | คะแนน: {res.Rating}");
             }
 
+            int totalRestaurants = restaurants.Count;
+            double averageRating = restaurants.Average(res => res.Rating);
 
+            Console.WriteLine("---------------------------------------------");
+            Console.WriteLine($"จำนวนร้านทั้งหมด: {totalRestaurants} ร้าน");
+            Console.WriteLine($"คะแนนเฉลี่ยของทุกร้าน: {averageRating:F2} คะแนน");
         }
     }
     public class Restaurant
